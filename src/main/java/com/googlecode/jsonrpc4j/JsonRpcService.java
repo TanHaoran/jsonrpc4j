@@ -12,11 +12,11 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Target(TYPE)
 @Retention(RUNTIME)
 public @interface JsonRpcService {
-	
-	/**
-	 * The path that the service is available at.
-	 *
-	 * @return the service path
-	 */
-	String value();
+
+    /**
+     * The path that the service is available at.
+     *
+     * @return the service path
+     */
+    String value() default "";
 }
